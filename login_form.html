@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+       
+        body {font-family: Arial, Helvetica, sans-serif;}
+
+
+input{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  box-sizing: border-box;
+  margin: 10px 0px;
+  resize: vertical;
+}
+
+label{
+    color: aliceblue;
+    font-size:larger;
+
+}
+
+input[type=submit] {
+  background-color: #4e0342;
+  color: white;
+  padding: 12px ;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+ 
+
+
+}
+
+select{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  box-sizing: border-box;
+  margin: 10px 0px;
+  resize: vertical;
+}
+
+
+
+.submit{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+  border-radius: 50px;
+  background-color:rgb(116, 72, 116);
+  padding: 20px;
+  
+}
+
+    </style>
+</head>
+<body>
+   
+    
+        <h1>LOGIN PAGES:</h1>
+        <div class="container"> 
+<form name="login page">
+   
+            
+           <div><label for="username"> UserName:</label><br>
+            <input type="username" placeholder="username" name="username" minlength="8" maxlength="15" required>
+            </div>
+           
+        
+            <div><label for="email"> Email:</label><br>
+                <input type="email" placeholder="email" name="Email" minlength="8" maxlength="15" required></div>
+            
+           
+        
+             <div>
+            <label for="Password"> Password:</label><br>
+            <input type="password" placeholder="password" name="password" minlength="8" maxlength="15" required>
+            </div>
+
+             <div class="submit">
+
+            <input type="submit">
+             </div>
+        </div>
+        
+
+        
+   
+ </form>
+
+
+</div>
+<br>
+<h1>Contact Information:</h1>
+<div class="container">
+    <form>
+        <div><label for="fname"> FirstName:</label><br>
+            <input type="fname" placeholder="FirstName" name="FirstName" minlength="8" maxlength="15" required>
+            </div>
+
+            <div><label for="lname"> LastName:</label><br>
+                <input type="lname" placeholder="FirstName" name="FirstName" minlength="8" maxlength="15" required>
+                </div>
+            <div>
+                <label for="country">Country</label>
+    <select  name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">India</option>
+      <option value="usa">USA</option>
+    </select>
+    
+            </div>
+            
+            <div>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+            </div>
+            <div>
+                <label>Enter phone number:</label>
+                <input type="number" minlength="10">
+            </div>
+            <div class="submit" >
+
+                <input type="submit">
+                 </div>
+                
+    </form>
+</div>
+
+
+    
+</body>
+</html>
